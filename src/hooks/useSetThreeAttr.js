@@ -1,7 +1,8 @@
+
 const containsAssignmentOperator = (str) => /(\+=|-=|\*=|\/=)/.test(str);
 const createAssignmentFunction = (operatorString, value) => new Function('value', `return value ${operatorString}${value}`);
 
-export const useThreeAttrChange = (attr) => {
+const useSetThreeAttr = (attr) => {
     //Parse strings and execute allowed features
     const convertOperator = (initialVal, axisParam) => {
         const { operator, operand } = axisParam;
@@ -34,3 +35,4 @@ export const useThreeAttrChange = (attr) => {
         // for (const key in obj) mesh[attr][key] = setValue(mesh[attr][key], obj[key])
     }
 }
+export default useSetThreeAttr;

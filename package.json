@@ -9,6 +9,8 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@rollup/plugin-alias": "^5.0.0",
+    "dat.gui": "^0.7.9",
     "vite": "^4.4.5"
   },
   "dependencies": {
