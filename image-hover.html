@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .imageContainer {
+        position: relative;
+        width: 800px;
+        height: 800px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        max-width: 100%;
+        filter: saturate(0);
+        transition: all ease 0.5s;
+    }
+
+
+    .imageContainer:hover {
+        filter: saturate(100%);
+    }
+
+    .imageContainer > * {
+        position: absolute;
+        inset: 0;
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover;
+    }
+</style>
+<body>
+    <div class="imageContainer">
+        <img src="https://assets.codepen.io/9051928/palm-tree.jpg">
+    </div>
+    <script type="module" src="./src/image-hover.js"></script>
+</body>
+</html>

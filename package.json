@@ -11,6 +11,7 @@
   "devDependencies": {
     "@rollup/plugin-alias": "^5.0.0",
     "dat.gui": "^0.7.9",
+    "jquery": "^3.7.1",
     "vite": "^4.4.5"
   },
   "dependencies": {
